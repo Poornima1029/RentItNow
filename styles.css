@@ -47,23 +47,49 @@ header {
 
 .hero-section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 150vh;
   text-align: center;
-  color: #333;
+  background-image: url('bg.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-blend-mode: multiply;
+  background-color: rgba(153, 184, 186, 0.5);
+}
+
+.overlay-card {
+  background-color: rgba(255, 255, 255, 0.7); /* Translucent blue color */
+  padding: 40px;
+  border-radius: 15px;
+  color: #fff;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #000000; /* White text for better readability */
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: #000000; /* White text for better readability */
 }
+
+.hero-content a.btn {
+  margin-top: 20px;
+}
+
+
 
 footer {
   background-color: #ffffff;
