@@ -1,30 +1,48 @@
 body {
-  background-color: #f2f4f6; /* Soft light background */
-  font-family: 'Montserrat', sans-serif; /* New font */
+  background-color: #f2f4f6;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
   background-color: #ffffff;
-  border-bottom: 2px solid #dee2e6; /* Slightly darker border */
+  border-bottom: 2px solid #dee2e6;
 }
 
 .navbar {
   padding: 15px 30px;
 }
 
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular shape */
+  margin-right: 15px;
+}
+
+.title {
+  font-size: 1.75rem; /* Larger title */
+  font-weight: 700;
+  color: #007bff; /* Bright blue title color */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.title:hover {
+  color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
 .nav-link {
   color: #333;
-  padding: 10px 15px;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 .nav-link:hover {
-  background-color: #007bff; /* Bright blue for hover */
-  color: #ffffff; /* White text on hover */
-  border-radius: 5px;
-  transform: scale(1.05); /* Slight scaling effect */
+  color: #007bff;
+  border-bottom: 2px solid #007bff; /* Underline effect on hover */
 }
 
 .hero-section {
@@ -60,139 +78,113 @@ footer {
 .features h2 {
   margin-bottom: 30px;
   font-size: 2rem;
-  color: #007bff; /* Accent color for headings */
+  color: #007bff;
 }
 
 .feature-card {
   border: 1px solid #dee2e6;
-  border-radius: 15px; /* More rounded corners */
+  border-radius: 15px;
   padding: 20px;
   margin: 15px;
-  background-color: #ffffff; /* Card background */
+  background-color: #ffffff;
   transition: transform 0.2s, box-shadow 0.3s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card:hover {
-  transform: translateY(-10px); /* Move the card up on hover */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #007bff; /* Accent color for card titles */
+  color: #007bff;
 }
 
 .feature-card p {
   font-size: 1rem;
-  color: #555; /* Darker text for better readability */
+  color: #555;
 }
 
-/* Featured Items Section */
 .featured-items {
   padding: 60px 30px;
-  background-color: #ffffff; /* White background for contrast */
+  background-color: #ffffff;
 }
 
 .featured-items h2 {
   margin-bottom: 30px;
   font-size: 2rem;
-  color: #007bff; /* Accent color for headings */
+  color: #007bff;
   text-align: center;
 }
 
 .item-card {
   border: 1px solid #dee2e6;
-  border-radius: 15px; /* More rounded corners */
+  border-radius: 15px;
   padding: 20px;
   margin: 15px;
-  background-color: #f8f9fa; /* Card background */
-  text-align: center; /* Centered text */
+  background-color: #f8f9fa;
+  text-align: center;
   transition: transform 0.2s, box-shadow 0.3s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .item-card:hover {
-  transform: translateY(-10px); /* Move the card up on hover */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .item-card img {
-  max-width: 100%; /* Responsive images */
-  border-radius: 10px; /* Rounded corners for images */
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .item-card h3 {
   margin-top: 15px;
   font-size: 1.5rem;
-  color: #007bff; /* Accent color for item titles */
+  color: #007bff;
 }
 
 .item-card p {
-  color: #555; /* Darker text for better readability */
+  color: #555;
 }
 
 .price {
   display: block;
   margin-top: 10px;
   font-size: 1.2rem;
-  color: #28a745; /* Green color for price */
+  color: #28a745;
   font-weight: bold;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
   .feature-card,
   .item-card {
     margin: 10px;
-    flex: 0 0 calc(50% - 20px); /* Two cards per row */
+    flex: 0 0 calc(50% - 20px);
   }
 
   .features h2,
   .featured-items h2 {
-    font-size: 1.75rem; /* Slightly smaller headings */
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width: 768px) {
   .feature-card,
   .item-card {
-    flex: 0 0 calc(100% - 20px); /* One card per row */
+    flex: 0 0 calc(100% - 20px);
   }
 
   .hero-content h1 {
-    font-size: 2rem; /* Smaller hero heading */
+    font-size: 2rem;
   }
 
   .hero-content p {
-    font-size: 1rem; /* Smaller hero paragraph */
-  }
+    font-size: .1rem; }
 
-  footer {
-    padding: 20px 0; /* Smaller footer padding */
+    .navbar-brand { font-size: 1.5rem; }
+    
+    .nav-link { padding: 8px 15px; } 
   }
-
-  .features h2,
-  .featured-items h2 {
-    font-size: 1.5rem; /* Smaller headings */
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar {
-    padding: 10px 15px; /* Smaller navbar padding */
-  }
-
-  .nav-link {
-    padding: 8px 10px; /* Smaller link padding */
-  }
-
-  .hero-content h1 {
-    font-size: 1.5rem; /* Smaller hero heading for very small screens */
-  }
-
-  .hero-content p {
-    font-size: 0.9rem; /* Smaller hero paragraph for very small screens */
-  }
-}
