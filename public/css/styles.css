@@ -1,0 +1,198 @@
+body {
+  background-color: #f2f4f6; /* Soft light background */
+  font-family: 'Montserrat', sans-serif; /* New font */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #dee2e6; /* Slightly darker border */
+}
+
+.navbar {
+  padding: 15px 30px;
+}
+
+.nav-link {
+  color: #333;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #007bff; /* Bright blue for hover */
+  color: #ffffff; /* White text on hover */
+  border-radius: 5px;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  color: #333;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #ffffff;
+  border-top: 2px solid #dee2e6;
+}
+
+.features {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #007bff; /* Accent color for headings */
+}
+
+.feature-card {
+  border: 1px solid #dee2e6;
+  border-radius: 15px; /* More rounded corners */
+  padding: 20px;
+  margin: 15px;
+  background-color: #ffffff; /* Card background */
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff; /* Accent color for card titles */
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555; /* Darker text for better readability */
+}
+
+/* Featured Items Section */
+.featured-items {
+  padding: 60px 30px;
+  background-color: #ffffff; /* White background for contrast */
+}
+
+.featured-items h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #007bff; /* Accent color for headings */
+  text-align: center;
+}
+
+.item-card {
+  border: 1px solid #dee2e6;
+  border-radius: 15px; /* More rounded corners */
+  padding: 20px;
+  margin: 15px;
+  background-color: #f8f9fa; /* Card background */
+  text-align: center; /* Centered text */
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-card:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.item-card img {
+  max-width: 100%; /* Responsive images */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.item-card h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #007bff; /* Accent color for item titles */
+}
+
+.item-card p {
+  color: #555; /* Darker text for better readability */
+}
+
+.price {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #28a745; /* Green color for price */
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .feature-card,
+  .item-card {
+    margin: 10px;
+    flex: 0 0 calc(50% - 20px); /* Two cards per row */
+  }
+
+  .features h2,
+  .featured-items h2 {
+    font-size: 1.75rem; /* Slightly smaller headings */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-card,
+  .item-card {
+    flex: 0 0 calc(100% - 20px); /* One card per row */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* Smaller hero heading */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Smaller hero paragraph */
+  }
+
+  footer {
+    padding: 20px 0; /* Smaller footer padding */
+  }
+
+  .features h2,
+  .featured-items h2 {
+    font-size: 1.5rem; /* Smaller headings */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 15px; /* Smaller navbar padding */
+  }
+
+  .nav-link {
+    padding: 8px 10px; /* Smaller link padding */
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem; /* Smaller hero heading for very small screens */
+  }
+
+  .hero-content p {
+    font-size: 0.9rem; /* Smaller hero paragraph for very small screens */
+  }
+}

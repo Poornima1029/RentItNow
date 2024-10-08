@@ -1,0 +1,29 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .cart-item {
+    background-color: #ffe3dc;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .btn-danger {
+    background-color: #ff6f58;
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #ff4d3a;
+  }
+  
+  .btn-primary {
+    background-color: #ff8b72;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff6f58;
+  }
+  

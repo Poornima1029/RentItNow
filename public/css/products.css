@@ -1,0 +1,69 @@
+body {
+  background-color: #f2f4f6; /* Soft light background */
+  font-family: 'Montserrat', sans-serif; /* New font */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #dee2e6; /* Slightly darker border */
+}
+
+.navbar {
+  padding: 15px 30px;
+}
+
+.nav-link {
+  color: #333;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #007bff; /* Bright blue for hover */
+  color: #ffffff; /* White text on hover */
+  border-radius: 5px;
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+
+.card {
+  border: none;
+  border-radius: 15px; /* More rounded corners */
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0; /* Rounded corners for the image */
+}
+
+.btn-primary {
+  background-color: #ff8b72; /* Soft coral color */
+  border: none;
+  transition: background-color 0.3s; /* Smooth transition for button color */
+}
+
+.btn-primary:hover {
+  background-color: #ff6f58; /* Darker coral on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .col-sm-6 {
+    flex: 0 0 100%; /* Full width on small screens */
+    max-width: 100%; /* Ensures full width */
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.3333%; /* 3 cards per row on medium screens */
+    max-width: 33.3333%;
+  }
+}
