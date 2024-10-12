@@ -1,32 +1,49 @@
 body {
-  background-color: #f2f4f6; /* Soft light background */
-  font-family: 'Montserrat', sans-serif; /* New font */
+  background-color: #f2f4f6;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
   background-color: #ffffff;
-  border-bottom: 2px solid #dee2e6; /* Slightly darker border */
+  border-bottom: 2px solid #dee2e6;
 }
 
 .navbar {
   padding: 15px 30px;
 }
 
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular shape */
+  margin-right: 15px;
+}
+
+.title {
+  font-size: 1.75rem; /* Larger title */
+  font-weight: 700;
+  color: #007bff; /* Bright blue title color */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.title:hover {
+  color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
 .nav-link {
   color: #333;
-  padding: 10px 15px;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 .nav-link:hover {
-  background-color: #007bff; /* Bright blue for hover */
-  color: #ffffff; /* White text on hover */
-  border-radius: 5px;
-  transform: scale(1.05); /* Slight scaling effect */
+  color: #007bff;
+  border-bottom: 2px solid #007bff; /* Underline effect on hover */
 }
-
 
 .card {
   border: none;
